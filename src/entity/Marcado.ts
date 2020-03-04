@@ -27,10 +27,7 @@ export class Marcado extends Comun {
   )
   institucion: Institucion;
 
-  @OneToOne(
-    type => Estado,
-    estado => estado.marcado
-  )
+  @OneToOne(type => Estado)
   @JoinColumn()
   estado: Estado;
 }

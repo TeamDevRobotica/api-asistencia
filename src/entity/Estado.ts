@@ -6,10 +6,4 @@ import { Marcado } from "./Marcado";
 export class Estado extends Comun {
   @Column()
   descripcion: string;
-
-  @OneToOne(
-    type => Marcado,
-    marcado => marcado.estado
-  )
-  marcado: Marcado;
 }
