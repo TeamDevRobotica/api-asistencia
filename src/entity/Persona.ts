@@ -20,12 +20,9 @@ export class Persona extends Comun {
   @JoinColumn()
   usuario: Usuario;
 
-  @OneToMany(
-    type => Contacto,
-    contacto => contacto.persona
-  )
+  @OneToOne(type => Contacto)
   @JoinColumn()
-  contactos: Contacto[];
+  contacto: Contacto;
 
   @OneToMany(
     type => Asistencia,

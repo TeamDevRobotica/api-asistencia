@@ -14,11 +14,11 @@ export class Contacto extends Comun {
   @Column()
   email: string;
 
-  @ManyToOne(
+  /*  @OneToOne(
     type => Persona,
     persona => persona.contactos
   )
-  persona: Persona;
+  persona: Persona; */
 
   @OneToOne(
     type => Institucion,
