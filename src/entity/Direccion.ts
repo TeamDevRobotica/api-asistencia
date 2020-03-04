@@ -9,10 +9,4 @@ export class Direccion extends Comun {
 
   @Column()
   altura: number;
-
-  @OneToOne(
-    type => Institucion,
-    institucion => institucion.direccion
-  )
-  institucion: Institucion;
 }

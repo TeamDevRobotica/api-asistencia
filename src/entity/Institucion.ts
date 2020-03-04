@@ -32,10 +32,7 @@ export class Institucion extends Comun {
   @JoinColumn()
   marcados: Marcado[];
 
-  @OneToOne(
-    type => Direccion,
-    direccion => direccion.institucion
-  )
+  @OneToOne(type => Direccion)
   @JoinColumn()
   direccion: Direccion;
 
