@@ -1,7 +1,6 @@
 import { Entity, Column, OneToOne, JoinColumn, OneToMany } from "typeorm";
 import { Comun } from "./comun/Comun";
 import { Usuario } from "./Usuario";
-import { Direccion } from "./Direccion";
 import { Contacto } from "./Contacto";
 import { Asistencia } from "./Asistencia";
 

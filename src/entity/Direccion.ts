@@ -1,6 +1,5 @@
-import { Entity, Column, OneToOne } from "typeorm";
+import { Entity, Column } from "typeorm";
 import { Comun } from "./comun/Comun";
-import { Institucion } from "./Institucion";
 
 @Entity()
 export class Direccion extends Comun {

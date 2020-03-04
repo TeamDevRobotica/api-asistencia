@@ -1,11 +1,4 @@
-import {
-  Entity,
-  Column,
-  OneToMany,
-  JoinColumn,
-  JoinTable,
-  OneToOne
-} from "typeorm";
+import { Entity, Column, OneToMany, JoinColumn, OneToOne } from "typeorm";
 import { Comun } from "./comun/Comun";
 import { Marcado } from "./Marcado";
 import { Direccion } from "./Direccion";
