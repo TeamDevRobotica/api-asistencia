@@ -13,16 +13,4 @@ export class Contacto extends Comun {
 
   @Column()
   email: string;
-
-  /*  @OneToOne(
-    type => Persona,
-    persona => persona.contactos
-  )
-  persona: Persona; */
-
-  @OneToOne(
-    type => Institucion,
-    institucion => institucion.contacto
-  )
-  institucion: Institucion;
 }

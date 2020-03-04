@@ -36,10 +36,7 @@ export class Institucion extends Comun {
   @JoinColumn()
   direccion: Direccion;
 
-  @OneToOne(
-    type => Contacto,
-    contacto => contacto.institucion
-  )
+  @OneToOne(type => Contacto)
   @JoinColumn()
   contacto: Contacto;
 }
